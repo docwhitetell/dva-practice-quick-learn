@@ -1,0 +1,12 @@
+{
+  "extraBabelPlugins": [
+    ["import", { "libraryName": "antd", "libraryDirectory": "es", "style": "css" }]
+  ],
+  "proxy": {
+    "/api": {
+       "target": "https://unsplash.com",
+       "changeOrigin": true,
+       "pathRewrite": {"^/api": ""}
+    }
+  }
+}
